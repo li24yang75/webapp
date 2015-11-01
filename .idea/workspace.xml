@@ -110,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.36">
+              <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="mainView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/mainView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="17.618181">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
@@ -132,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/compiled/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3326572">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1386" column="47" selection-start-line="1386" selection-start-column="44" selection-end-line="1386" selection-end-column="47" />
               <folding />
             </state>
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/paypal.js" />
         <option value="$PROJECT_DIR$/public/buyView.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/mainView.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -217,6 +217,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,8 +321,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +433,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24951394" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26506805" sideWeight="0.5072202" order="2" side_tool="true" content_ui="tabs" />
@@ -493,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,17 +830,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/css/compiled/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1386" column="47" selection-start-line="1386" selection-start-column="44" selection-end-line="1386" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/mainView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.618181">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
@@ -853,10 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/compiled/theme.css">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326572">
-          <caret line="1386" column="47" selection-start-line="1386" selection-start-column="44" selection-end-line="1386" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.36">
+          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
           <folding />
         </state>
       </provider>
