@@ -85,7 +85,7 @@ router.get('/show', function (req, res, next) {
             res.render('emailTemplate', {newCdkey : dataSnapshot.val()["cdkey"]});
             refChildTrans.off();
         } else {
-            
+
         }
     }, function (err) {
         // code to handle read error
