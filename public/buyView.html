@@ -1,0 +1,80 @@
+<div id="pricing" >
+    <div class="container" >
+        <div class="row header">
+            <h3>Free trial.</h3>
+
+            <p>Every user can get unlimited free trial every day. You do not need to buy our bot firstly. When our
+                bot
+                works well on your windows PC, then you can think about paying for the bot. After you make a
+                payment,
+                there will be a CDKEY shown on your webpage. We will also send that CDKEY to your email box. Then
+                you
+                can use this CDKEY for one month.</p>
+        </div>
+        <div class="row charts">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="chart first">
+                    <div class="quantity">
+                        <span class="dollar">$</span>
+                        <span class="price">30</span>
+                        <span class="period">/ Month</span>
+                    </div>
+                    <div class="plan-name">Premium</div>
+                    <div class="specs">
+                        <div class="spec">
+                            <span class="variable"> Accelerate</span>
+                            game speed
+                        </div>
+                        <div class="spec">
+                            <span class="variable"> Farm</span>
+                            thousands cards daily
+                        </div>
+                        <div class="spec">
+                            <span class="variable">Automatically</span>
+                            input authentication code
+                        </div>
+                        <div class="spec">
+                            <span class="variable">Automatically</span>
+                            upgrade cards and fill energy
+                        </div>
+                        <form name="myForm" novalidate>
+                            <div class="spec"><span class="label label-info" style = "font-size:15px">Enter your email to receive CDKEY:</span></div>
+                            <div class="input-group">
+                                <input type="email" name="email1" class="form-control" ng-model="email1" required>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-ok" style = "color:green; font-size: 20px" ng-show="myForm.email1.$valid"></span>
+                                    <span class="glyphicon glyphicon-remove" style = "color:red; font-size: 20px" ng-show="myForm.email1.$invalid"></span>
+                                </span>
+                            </div><br>
+                            <div class="spec"><span class="label label-info" style = "font-size:15px">Re-enter your email:</span></div>
+                            <div class="input-group">
+                                <input type="email" name="email2" class="form-control" ng-model="email2" required>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-ok" style = "color:green; font-size: 20px" ng-show="myForm.email2.$valid && (email1 == email2)"></span>
+                                    <span class="glyphicon glyphicon-remove" style = "color:red; font-size: 20px" ng-show="myForm.email2.$invalid || (email1 != email2)"></span>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+
+
+                    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="Y3WS6UGWVY8GS">
+                        <input type="hidden" name="return" value="http://localhost:3000/paypal/show">
+                        <input type="hidden" name="notify_url" value="http://6796adf4.ngrok.com/paypal/auth">
+                        <input type="hidden" name="custom" value="{{email2}}">
+                        <!--<input type="hidden" name="business" value="li24yang75@163.com"/>-->
+                        <!--<input type="hidden" name="rm" value="1">-->
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" >
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
