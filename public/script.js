@@ -9,17 +9,21 @@ app.config(['$routeProvider',
                 templateUrl: 'buyView.html',
                 controller: 'buyCtrl'
             }).
-            when('/create', {
-                templateUrl: 'createEmployee.html',
-                controller: 'createCtrl'
+            when('/news', {
+                templateUrl: 'news.html',
+                controller: 'newsCtrl'
             }).
-            when('/info/:employeeId', {
-                templateUrl: 'employeeInfo.html',
-                controller: 'infoCtrl'
+            when('/community', {
+                templateUrl: 'community.html',
+                controller: 'communityCtrl'
             }).
-            when('/report/:managerId', {
-                templateUrl: 'directReportList.html',
-                controller: 'reportCtrl'
+            when('/tutorial', {
+                templateUrl: 'tutorial.html',
+                controller: 'tutorialCtrl'
+            }).
+            when('/download', {
+                templateUrl: 'download.html',
+                controller: 'downloadCtrl'
             }).
             when('/', {
                 templateUrl: 'mainView.html',
@@ -35,17 +39,22 @@ app.controller('mainCtrl',function($scope, $location) {
 });
 
 app.controller('buyCtrl',function($scope, $location) {
-    //$scope.isEmailValid = false;
-    //
-    //$scope.$watch('email1',function() {$scope.emailCheck();});
-    //$scope.$watch('email2',function() {$scope.emailCheck();});
-    //
-    //$scope.emailCheck = function() {
-    //    console.log($scope.isEmailValid);
-    //    $scope.isEmailValid = $scope.myForm.email1.$valid && ($scope.email1 == $scope.email2);
-    //
-    //};
+
+});
+
+app.controller('newsCtrl',function($scope, $location) {
 
 });
 
 
+app.controller('communityCtrl',function($scope, $location) {
+
+});
+
+app.controller('tutorialCtrl',function($scope, $location) {
+
+});
+
+app.controller('downloadCtrl',function($scope, $location) {
+
+});
