@@ -37,10 +37,9 @@ router.post('/auth', function (req, res, next) {
                                 }
                             });
                             var refChildCdkey = dbmail["ref"].child('mynba2k16F/cdkey/' + newCdkey);
-                            refChildCdkey.set({"tx": req.body["txn_id"], "expireTime": 1, "new": true, "deviceCode": 1}, function (error) {
+                            refChildCdkey.set({"tx": req.body["txn_id"], "expireTime": 1, "new": true}, function (error) {
                                 if (error) {
                                 } else {
-
                                     // send email to user
                                     var emailTo;
                                     if (req.body["payer_email"] == req.body["custom"]) {
