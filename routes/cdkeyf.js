@@ -40,12 +40,12 @@ router.get('/verify/:keyCode/:randomCode', function(req, res, next) {
 
 
 router.get('/getrandomcode/:keyCode/:randomCode', function(req, res, next) {
-    var ref = dbmail["ref"].child('mynba2k16F/cdkey/' + req.params.keyCode);
+    var ref = dbmail["ref"].child('mynba2k16F/cdkey/' + req.params.keyCode +  "/randomCode");
     ref.once("value", function(codeState) {
         if (codeState.val() == null) {
             res.send("Invalid cdkey");
         } else {
-            if (codeState.val()["randomCode"] == req.params.randomCode) {
+            if (codeState.val() == req.params.randomCode) {
                 res.send("true");
             } else {
                 res.send("Another device is using this cdkey. Log out.")
