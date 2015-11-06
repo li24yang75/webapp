@@ -21,17 +21,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="paypal.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="paypal.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/paypal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state vertical-scroll-proportion="-1.7799227">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
-                <marker date="1446623556575" expanded="true" signature="2545:2633" placeholder="..." />
-                <marker date="1446623556575" expanded="true" signature="2694:2767" placeholder="..." />
-                <marker date="1446623556575" expanded="true" signature="2783:2848" placeholder="..." />
-                <marker date="1446623556575" expanded="true" signature="2927:2956" placeholder="..." />
+                <marker date="1446820050986" expanded="true" signature="2546:2634" placeholder="..." />
+                <marker date="1446820050986" expanded="true" signature="2695:2768" placeholder="..." />
+                <marker date="1446820050986" expanded="true" signature="2784:2849" placeholder="..." />
+                <marker date="1446820050986" expanded="true" signature="2928:2957" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/buyView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.458334">
+              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tutorial.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48380566">
+            <state vertical-scroll-proportion="-12.5">
               <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
               <folding />
             </state>
@@ -69,7 +79,7 @@
       <file leaf-file-name="mainView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/mainView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.509091">
+            <state vertical-scroll-proportion="0.0">
               <caret line="252" column="103" selection-start-line="252" selection-start-column="103" selection-end-line="252" selection-end-column="103" />
               <folding />
             </state>
@@ -123,11 +133,11 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/buyView.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/paypal.js" />
         <option value="$PROJECT_DIR$/routes/cdkeyf.js" />
         <option value="$PROJECT_DIR$/public/download.html" />
         <option value="$PROJECT_DIR$/public/mainView.html" />
         <option value="$PROJECT_DIR$/public/tutorial.html" />
+        <option value="$PROJECT_DIR$/routes/paypal.js" />
       </list>
     </option>
   </component>
@@ -140,9 +150,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="21" />
+    <option name="y" value="-4" />
     <option name="width" value="1543" />
-    <option name="height" value="879" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -167,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,12 +206,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bot11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bot11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +331,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="21" width="1543" height="879" extended-state="6" />
+    <frame x="57" y="-4" width="1543" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20674011" sideWeight="0.4927798" order="0" side_tool="false" content_ui="combo" />
@@ -637,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/buyView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.375">
-          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/community.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -665,19 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/paypal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <marker date="1446623556575" expanded="true" signature="2545:2633" placeholder="..." />
-            <marker date="1446623556575" expanded="true" signature="2694:2767" placeholder="..." />
-            <marker date="1446623556575" expanded="true" signature="2783:2848" placeholder="..." />
-            <marker date="1446623556575" expanded="true" signature="2927:2956" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/cdkeyf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -696,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/mainView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.509091">
+        <state vertical-scroll-proportion="0.0">
           <caret line="252" column="103" selection-start-line="252" selection-start-column="103" selection-end-line="252" selection-end-column="103" />
           <folding />
         </state>
@@ -712,9 +716,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48380566">
+        <state vertical-scroll-proportion="-12.5">
           <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/buyView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.458334">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/paypal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7799227">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1446820050986" expanded="true" signature="2546:2634" placeholder="..." />
+            <marker date="1446820050986" expanded="true" signature="2695:2768" placeholder="..." />
+            <marker date="1446820050986" expanded="true" signature="2784:2849" placeholder="..." />
+            <marker date="1446820050986" expanded="true" signature="2928:2957" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

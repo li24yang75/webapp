@@ -8,7 +8,7 @@ router.post('/auth', function (req, res, next) {
     var ipn = require('paypal-ipn');
     res.sendStatus(200);
 
-    ipn.verify(req.body, {'allow_sandbox': true}, function callback(err, msg) {
+    ipn.verify(req.body, {'allow_sandbox': false}, function callback(err, msg) {
         if (err) {
             console.log(err);
         } else {
