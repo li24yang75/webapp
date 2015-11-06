@@ -56,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.48380566">
               <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainView.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/mainView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75303644">
-              <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
+            <state vertical-scroll-proportion="-4.509091">
+              <caret line="252" column="103" selection-start-line="252" selection-start-column="103" selection-end-line="252" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/routes/paypal.js" />
         <option value="$PROJECT_DIR$/routes/cdkeyf.js" />
         <option value="$PROJECT_DIR$/public/download.html" />
-        <option value="$PROJECT_DIR$/public/tutorial.html" />
         <option value="$PROJECT_DIR$/public/mainView.html" />
+        <option value="$PROJECT_DIR$/public/tutorial.html" />
       </list>
     </option>
   </component>
@@ -308,9 +308,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="21" width="1543" height="879" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20674011" sideWeight="0.4927798" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20674011" sideWeight="0.4927798" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -665,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/cdkey.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="19" selection-start-line="40" selection-start-column="16" selection-end-line="47" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/paypal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -702,18 +694,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tutorial.html">
+    <entry file="file://$PROJECT_DIR$/public/mainView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
+        <state vertical-scroll-proportion="-4.509091">
+          <caret line="252" column="103" selection-start-line="252" selection-start-column="103" selection-end-line="252" selection-end-column="103" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/mainView.html">
+    <entry file="file://$PROJECT_DIR$/routes/cdkey.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75303644">
-          <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="19" selection-start-line="40" selection-start-column="16" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48380566">
+          <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
           <folding />
         </state>
       </provider>
