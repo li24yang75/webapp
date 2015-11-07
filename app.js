@@ -9,6 +9,7 @@ var users = require('./routes/users');
 var cdkey = require('./routes/cdkey');
 var paypal = require('./routes/paypal');
 var cdkeyf = require('./routes/cdkeyf');
+var api = require('./routes/api');
 var app = express();
 
 
@@ -39,6 +40,8 @@ app.use('/users', users);
 app.use('/cdkey', cdkey);
 app.use('/paypal', paypal);
 app.use('/cdkeyf', cdkeyf);
+app.use('/api', api);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
