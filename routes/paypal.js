@@ -16,7 +16,7 @@ router.post('/auth', function (req, res, next) {
             if (req.body.payment_status == 'Completed') {
                 // Payment has been confirmed as completed
                 // req.body["mc_gross"] == "1.00" I am not sure if I need to check the price or not.
-                if (true) {
+                if (req.body["mc_gross"] == "30.00" ) {
                     var refChildTrans = dbmail["ref"].child('mynba2k16F/trans/' + req.body["txn_id"]);
                     refChildTrans.once('value', function (dataSnapshot) {
                         // code to handle new value
