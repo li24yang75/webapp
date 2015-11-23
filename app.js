@@ -11,6 +11,7 @@ var paypal = require('./routes/paypal');
 var cdkeyf = require('./routes/cdkeyf');
 var api = require('./routes/api');
 var cdkeyc = require('./routes/cdkeyc');
+var cdkeys = require('./routes/cdkeys');
 var app = express();
 
 
@@ -43,7 +44,7 @@ app.use('/paypal', paypal);
 app.use('/cdkeyf', cdkeyf);
 app.use('/api', api);
 app.use('/cdkeyc', cdkeyc);
-
+app.use('/cdkeys', cdkeys);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
