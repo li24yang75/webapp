@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var dbmail = require("./dbmail");
+
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -31,8 +33,8 @@ router.get('/xxx', function (req, res, next) {
 //
 //        }
 //        console.log(str1)
-//        var ref = new Firebase("https://bot11.firebaseio.com/cdkey/mynba2k16/" + str1);
-//        ref.set({"deviceCode": 1, "expireTime": 1, "new": true}, function (error) {
+//        var ref = dbmail["ref"].child('cdkey/mynba2k16/' + str1);
+//        ref.set({"new": true}, function (error) {
 //            if (error) {
 //
 //            } else {
