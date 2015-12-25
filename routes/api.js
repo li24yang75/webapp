@@ -14,11 +14,11 @@ router.get('/getcdkeytime/:cdkey', function (req, res, next) {
     {
         var time = new Date(shijianchuo);
         var y = time.getFullYear();
-        var m = time.getMonth()+1;
-        var d = time.getDate()+1;
-        var h = time.getHours()+1;
-        var mm = time.getMinutes()+1;
-        var s = time.getSeconds()+1;
+        var m = time.getMonth() + 1;
+        var d = time.getDate();
+        var h = time.getHours();
+        var mm = time.getMinutes();
+        var s = time.getSeconds();
         return y+'-'+add0(m)+'-'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
     }
     var ref = dbmail["ref"].child('cdkey/mynba2k16/' + req.params.cdkey);
@@ -26,7 +26,7 @@ router.get('/getcdkeytime/:cdkey', function (req, res, next) {
         if (codeState.val() == null) {
             res.send("无效的注册码！");
         } else {
-            res.send(format((codeState.val()["expireTime"] + 16 * 60 * 60) * 1000))
+            res.send(format((codeState.val()["expireTime"] + 60 * 60 * 16) * 1000))
         }
     }, function (errorObject) {
         console.log("The read failed: " + errorObject.code);

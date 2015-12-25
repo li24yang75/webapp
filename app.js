@@ -12,6 +12,7 @@ var cdkeyf = require('./routes/cdkeyf');
 var api = require('./routes/api');
 var cdkeyc = require('./routes/cdkeyc');
 var cdkeys = require('./routes/cdkeys');
+var cdkeyd = require('./routes/cdkeyd');
 var app = express();
 
 
@@ -45,6 +46,7 @@ app.use('/cdkeyf', cdkeyf);
 app.use('/api', api);
 app.use('/cdkeyc', cdkeyc);
 app.use('/cdkeys', cdkeys);
+app.use('/cdkeyd', cdkeyd);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
