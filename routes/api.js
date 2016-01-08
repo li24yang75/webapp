@@ -6,6 +6,11 @@ router.get('/gettime', function (req, res, next) {
     res.end(new Date().getTime().toString().slice(0,10));
 });
 
+router.get('/getrandomnum', function (req, res, next) {
+    var randomNum = Math.floor(Math.random() * 100000 + 1);
+    res.end("" + randomNum);
+});
+
 
 router.get('/getcdkeytime/:cdkey', function (req, res, next) {
 
