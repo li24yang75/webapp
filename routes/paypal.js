@@ -259,7 +259,7 @@ function write(str) {
 
 
 router.get('/show', function (req, res, next) {
-    var refChildTrans = dbmail["ref"].child('mynba2k16F1/trans/' + req.query["tx"]);
+    var refChildTrans = dbmail["ref"].child('mynba2k16F/trans/' + req.query["tx"]);
     refChildTrans.on('value', function (dataSnapshot) {
         if (dataSnapshot.val() != null) {
             res.render('emailTemplate', {newCdkey : dataSnapshot.val()["cdkey"]});
