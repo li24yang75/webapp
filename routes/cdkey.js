@@ -3,6 +3,9 @@ var router = express.Router();
 var dbmail = require("./dbmail");
 
 
+
+
+
 router.get('/mynba2k16/verify/:keyCode/:deviceCode', function(req, res, next) {
     var ref = dbmail["ref"].child('cdkey/mynba2k16/' + req.params.keyCode);
     ref.once("value", function(codeState) {
