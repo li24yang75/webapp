@@ -40,8 +40,6 @@ var fs = require("fs");
 //}, 2000);
 
 
-
-
 router.post('/auth', function (req, res, next) {
     res.sendStatus(200);
     var ipn = require('paypal-ipn');
