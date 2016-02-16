@@ -31,7 +31,7 @@ router.get('/getcdkeytime/:cdkey', function (req, res, next) {
         if (codeState.val() == null) {
             res.send("无效的注册码！");
         } else {
-            res.send(format((codeState.val()["expireTime"] + 60 * 60 * 16) * 1000))
+            res.send(format((codeState.val()["expireTime"] + 60 * 60 * 15) * 1000)+" (北京时间)")
         }
     }, function (errorObject) {
         console.log("The read failed: " + errorObject.code);
