@@ -38,12 +38,12 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body id="home2" ng-app="app">
+<body id="home2" ng-app="app" style = "background-color: #000000">
 <header class="navbar navbar-inverse white" role="banner" id="header1"
-        style="position:fixed; width : 100%; background-color: black;">
+        style="position:fixed; width : 100%; background-color: black; border-bottom: 1px solid #333;">
     <div class="container">
         <a href="#/" class="navbar-brand"><img class="img-responsive" width="150"
-                                               src="images/logos/mynba2k16bot2.png"
+                                               src="images/logos/bot11.png"
                                                alt="Advanced Free Mynba2k16 Bot - Earn Millions in Credits">
         </a>
 
@@ -57,11 +57,31 @@
 
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right" style="font-size: 17px">
+
+
+
+
+
+                <li class="dropdown" >
+                    <div class="btn-group" role="group" >
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style = "border: 0px;background-color: black; color: orange; font-size: 18px; padding-left: 20px; margin-top:0px; padding-top: 2px ">
+                            Games
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" style = "background-color: black; right: auto;left: 0px;">
+                            <li><a href="#/" style = "color: orange; padding-left : 17px;"><img src="images/logos/nba.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>MyNBA2K16</a></li>
+                            <li><a href="#/comming" style = "color: orange;  padding-left : 17px;"><img src="images/logos/wwe.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>WWE SuperCard</a></li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li class="dropdown">
                     <a href="#/" style="color:white">
                         Home
                     </a>
                 </li>
+
+
                 <li class="dropdown">
                     <a href="http://bbs.bot11.com" style="color:white">
                         Forums
@@ -93,9 +113,15 @@
 </header>
 
 
-<div ng-view>
+
+<div style = "padding-top: 69px">
+
+        <div style = " padding-left: 0px; background-color: #F4F8FA" ng-view>
+
+        </div>
 
 </div>
+
 
 <div id="footer" style="margin-top: 0px">
     <div class="container">
@@ -136,6 +162,10 @@
         </div>
     </div>
 </div>
+
+
+
+
 
 
 </body>

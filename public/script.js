@@ -25,6 +25,10 @@ app.config(['$routeProvider',
                 templateUrl: 'download.html',
                 controller: 'downloadCtrl'
             }).
+            when('/comming', {
+                templateUrl: 'commingsoon.html',
+                controller: 'commingsoonCtrl'
+            }).
             when('/', {
                 templateUrl: 'mainView.html',
                 controller: 'mainCtrl'
@@ -56,5 +60,9 @@ app.controller('tutorialCtrl',function($scope, $location) {
 });
 
 app.controller('downloadCtrl',function($scope, $location) {
+
+});
+
+app.controller('commingsoonCtrl',function($scope, $location) {
 
 });

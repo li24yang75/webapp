@@ -6,14 +6,15 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var cdkey = require('./routes/cdkey');
+//var cdkey = require('./routes/(delete)2');
 var paypal = require('./routes/paypal');
-var cdkeyf = require('./routes/cdkeyf');
+//var cdkeyf = require('./routes/(delete)4');
 var api = require('./routes/api');
-var cdkeyc = require('./routes/cdkeyc');
-var cdkeys = require('./routes/cdkeys');
+//var cdkeyc = require('./routes/(delete)3');
+//var cdkeys = require('./routes/(delete)1');
 var cdkeyd = require('./routes/cdkeyd');
 var cdkeyf1 = require('./routes/cdkeyf1');
+var cdkeywwe = require('./routes/cdkeywwe');
 var app = express();
 
 
@@ -40,16 +41,18 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//app.use('/cdkeyf', cdkeyf);
+//app.use('/cdkeyc', cdkeyc);
+//app.use('/cdkeys', cdkeys);
+//app.use('/cdkey', cdkey);
+
 app.use('/', routes);
 app.use('/users', users);
-app.use('/cdkey', cdkey);
 app.use('/paypal', paypal);
-app.use('/cdkeyf', cdkeyf);
 app.use('/api', api);
-app.use('/cdkeyc', cdkeyc);
-app.use('/cdkeys', cdkeys);
 app.use('/cdkeyd', cdkeyd);
 app.use('/cdkeyf1', cdkeyf1);
+app.use('/cdkeywwe', cdkeywwe);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
