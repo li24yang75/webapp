@@ -25,20 +25,24 @@ app.config(['$routeProvider',
                 templateUrl: 'download.html',
                 controller: 'downloadCtrl'
             }).
-            when('/comming', {
-                templateUrl: 'commingsoon.html',
-                controller: 'commingsoonCtrl'
+            when('/wwe', {
+                templateUrl: 'wweView.html',
+                controller: 'wweCtrl'
             }).
             when('/', {
-                templateUrl: 'mainView.html',
-                controller: 'mainCtrl'
+                templateUrl: 'home.html',
+                controller: 'homeCtrl'
+            }).
+            when('/nba', {
+                templateUrl: 'nbaView.html',
+                controller: 'nbaCtrl'
             }).
             otherwise({
                 redirectTo: '/'
             });
     }]);
 
-app.controller('mainCtrl',function($scope, $location) {
+app.controller('nbaCtrl',function($scope, $location) {
 
 });
 
@@ -63,6 +67,10 @@ app.controller('downloadCtrl',function($scope, $location) {
 
 });
 
-app.controller('commingsoonCtrl',function($scope, $location) {
+app.controller('wweCtrl',function($scope, $location) {
+
+});
+
+app.controller('homeCtrl',function($scope, $location) {
 
 });

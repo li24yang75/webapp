@@ -4,18 +4,18 @@
         <div class="row header">
             <h3>Free trial.</h3>
 
-            <p>Every user can get unlimited free trial every day. You do not need to buy our bot firstly. When our
+            <p style = "text-align: left; font-size:18px">Every user can get unlimited free trial every day. You do not need to buy our bot firstly. When our
                 bot
                 works well on your windows PC, then you can think about paying for the bot. After you make a
                 payment,
                 there will be a CDKEY shown on your webpage. We will also send that CDKEY to your email box. Then
                 you
                 can use this CDKEY for one month.</p>
-            <h3>If you do not receive the cdkey, after you make a payment.</h3>
-            <h3>Please send email to  'support@bot11.com'. </h3>
+            <p style = "text-align: left; font-size:20px">If you do not receive the cdkey, after you make a payment. Please send email to ' support@bot11.com '.</p>
+            <!--<h3 style = "text-align: left"> </h3>-->
         </div>
         <div class="row charts">
-            <div class="col-md-3"></div>
+
             <div class="col-md-6">
                 <div class="chart first">
                     <div class="quantity">
@@ -23,7 +23,7 @@
                         <span class="price">30</span>
                         <span class="period">/ Month</span>
                     </div>
-                    <div class="plan-name">Premium</div>
+                    <div class="plan-name" style = "color: #337ab7; font-weight: bold">MyNBA2K16</div>
                     <div class="specs">
                         <div class="spec">
                             <span class="variable"> Support</span>
@@ -42,7 +42,8 @@
                             upgrade cards and fill energy
                         </div>
                         <form name="myForm" novalidate>
-                            <div class="spec"><span class="label label-info" style = "font-size:15px">Enter your email to receive CDKEY:</span></div>
+
+                            <div class="panel panel-primary" style = "margin-bottom: 10px"> <div class="panel-heading" style = "padding:2px 5px; text-align: left"> <h4 class="panel-title" >Enter your email to receive CDKEY:</h4> </div> </div>
                             <div class="input-group">
                                 <input type="email" name="email1" class="form-control" ng-model="email1" required>
                                 <span class="input-group-addon">
@@ -50,7 +51,8 @@
                                     <span class="glyphicon glyphicon-remove" style = "color:red; font-size: 20px" ng-show="myForm.email1.$invalid"></span>
                                 </span>
                             </div><br>
-                            <div class="spec"><span class="label label-info" style = "font-size:15px">Re-enter your email:</span></div>
+                            <div class="panel panel-primary" style = "margin-bottom: 10px"> <div class="panel-heading" style = "padding:2px 5px;  text-align: left"> <h4 class="panel-title" >Re-enter your email:</h4> </div> </div>
+
                             <div class="input-group">
                                 <input type="email" name="email2" class="form-control" ng-model="email2" required>
                                 <span class="input-group-addon">
@@ -88,6 +90,150 @@
 
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-6">
+                <div class="chart first">
+                    <div class="quantity">
+                        <span class="dollar">$</span>
+                        <span class="price">30</span>
+                        <span class="period">/ Month</span>
+                    </div>
+                    <div class="plan-name" style = "color: #337ab7; font-weight: bold">WWE SuperCard</div>
+                    <div class="specs">
+                        <div class="spec">
+                            <span class="variable"> Support</span>
+                            Exhibition, PCC, RTG, Team PCC
+                        </div>
+                        <div class="spec">
+                            <span class="variable"> Farm</span>
+                            thousands cards daily
+                        </div>
+                        <div class="spec">
+                            <span class="variable">Automatically</span>
+                            input captcha number
+                        </div>
+                        <div class="spec">
+                            <span class="variable">Automatically</span>
+                            upgrade cards and fill energy
+                        </div>
+                        <form name="myForm1" novalidate>
+
+                            <div class="panel panel-primary" style = "margin-bottom: 10px"> <div class="panel-heading" style = "padding:2px 5px;  text-align: left"> <h4 class="panel-title" >Enter your email to receive CDKEY:</h4> </div> </div>
+                            <div class="input-group">
+                                <input type="email" name="email3" class="form-control" ng-model="email3" required>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-ok" style = "color:green; font-size: 20px" ng-show="myForm1.email3.$valid"></span>
+                                    <span class="glyphicon glyphicon-remove" style = "color:red; font-size: 20px" ng-show="myForm1.email3.$invalid"></span>
+                                </span>
+                            </div><br>
+                            <div class="panel panel-primary" style = "margin-bottom: 10px"> <div class="panel-heading" style = "padding:2px 5px;  text-align: left"> <h4 class="panel-title" >Re-enter your email:</h4> </div> </div>
+
+                            <div class="input-group">
+                                <input type="email" name="email4" class="form-control" ng-model="email4" required>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-ok" style = "color:green; font-size: 20px" ng-show="myForm1.email4.$valid && (email3 == email4)"></span>
+                                    <span class="glyphicon glyphicon-remove" style = "color:red; font-size: 20px" ng-show="myForm1.email4.$invalid || (email3 != email4)"></span>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+
+
+                    <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
+                        <!--<input type="hidden" name="cmd" value="_s-xclick">-->
+                        <!--<input type="hidden" name="hosted_button_id" value="FVYYBXAQRHEY4">-->
+
+
+                        <!--<input type="hidden" name="return" value="http://www.bot11.com/paypal/show">-->
+                        <!--<input type="hidden" name="notify_url" value="http://www.bot11.com/paypal/auth">-->
+                        <!--<input type="hidden" name="custom" value="{{email4}}">-->
+
+
+
+                        <!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+                        <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
+                    <!--</form>-->
+
+
+
+
+
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="Z6M2KM52XNWMG">
+
+                        <input type="hidden" name="return" value="http://www.bot11.com/paypal/show">
+                        <input type="hidden" name="notify_url" value="http://www.bot11.com/paypal/auth">
+                        <input type="hidden" name="custom" value="{{email4}}">
+
+
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+
+
+
+
+
+
+
+<!--test wwe-->
+                    <!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
+                        <!--<input type="hidden" name="cmd" value="_s-xclick">-->
+                        <!--<input type="hidden" name="hosted_button_id" value="CAWRF2FX3BAJN">-->
+                        <!--<input type="hidden" name="return" value="http://36c1730d.ngrok.io/paypal/show">-->
+                        <!--<input type="hidden" name="notify_url" value="http://36c1730d.ngrok.io/paypal/auth">-->
+                        <!--<input type="hidden" name="custom" value="{{email4}}">-->
+                        <!--<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+                        <!--<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
+                    <!--</form>-->
+
+
+
+
+
+
+
+
+                    <!--test nba-->
+                    <!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
+                    <!--<input type="hidden" name="cmd" value="_s-xclick">-->
+                    <!--<input type="hidden" name="hosted_button_id" value="Y3WS6UGWVY8GS">-->
+                    <!--&lt;!&ndash;<input type="hidden" name="return" value="http://www.bot11.com/paypal/show">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="hidden" name="notify_url" value="http://www.bot11.com/paypal/auth">&ndash;&gt;-->
+                    <!--<input type="hidden" name="return" value="http://36c1730d.ngrok.io/paypal/show">-->
+                    <!--<input type="hidden" name="notify_url" value="http://36c1730d.ngrok.io/paypal/auth">-->
+                    <!--<input type="hidden" name="custom" value="{{email4}}">-->
+                    <!--<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+                    <!--<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" >-->
+                    <!--</form>-->
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
         </div>
     </div>
 </div>

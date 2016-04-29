@@ -43,6 +43,8 @@ var fs = require("fs");
 router.post('/auth', function (req, res, next) {
     res.sendStatus(200);
     var ipn = require('paypal-ipn');
+    //console.log("+++++++++++++++++++=")
+    //console.log(JSON.stringify(req.body));
     write("-----------------------------------------------------------------------------------------------------------");
     write(JSON.stringify(req.body));
     ipn.verify(req.body, {'allow_sandbox': false}, function callback(err, msg) {
@@ -56,8 +58,19 @@ router.post('/auth', function (req, res, next) {
                 write("paypal completed!");
                 // Payment has been confirmed as completed
                 // req.body["mc_gross"] == "1.00" I am not sure if I need to check the price or not.
-                if (req.body["item_name"] == "Mynba2k16Bot" ) {
-                    var refChildTrans = dbmail["ref"].child('mynba2k16F/trans/' + req.body["txn_id"]);
+                if (req.body["item_number"] == "9" || req.body["item_number"] == "10") {
+                    var gameName = "";
+                    var gameSubDb = "";
+
+                    if (req.body["item_number"] == "9" ) {
+                        gameName = "MyNBA2K16";
+                        gameSubDb = "mynba2k16F";
+                    } else if(req.body["item_number"] == "10") {
+                        gameName = "WWE SuperCard";
+                        gameSubDb = "wwe";
+                    }
+
+                    var refChildTrans = dbmail["ref"].child(gameSubDb + '/trans/' + req.body["txn_id"]);
                     refChildTrans.once('value', function (dataSnapshot) {
                         // code to handle new value
                         write("firebase txn_id");
@@ -78,7 +91,7 @@ router.post('/auth', function (req, res, next) {
                                 if (error) {
                                     write(error);
                                 } else {
-                                    var refChildCdkey = dbmail["ref"].child('mynba2k16F/cdkey/' + newCdkey);
+                                    var refChildCdkey = dbmail["ref"].child(gameSubDb + '/cdkey/' + newCdkey);
                                     refChildCdkey.set({"tx": req.body["txn_id"], "expireTime": 1, "new": true}, function (error) {
                                         write("firebase set cdkey ");
                                         if (error) {
@@ -94,16 +107,16 @@ router.post('/auth', function (req, res, next) {
                                             }
                                             var emailpart1 = '<div style = "width: 558px; height: 310px; border: 1px solid darkgrey; border-radius: 3px; margin:auto">' +
                                                 '<div style = "width: 558px; height: 60px; border-radius: 3px; background-color: #3785b9"> <div style ="width:280px;height: 60px;font-size:45px; margin:auto; color:White">Your CDKEY</div> </div>' +
-                                                '<div style ="padding: 30px; font-size:20px"> <p>Thank you for your payment. This is your CDKEY:</p><p><strong>';
+                                                '<div style ="padding: 30px; font-size:20px"> <p>Thank you for your payment. This is your ' + gameName  + ' Bot CDKEY:</p><p><strong>';
 
-                                            var emailpart2 = '</strong></p><p>Happy emailing, Mynba2k16Bot Team</p><p>Please visit <a href = "http://www.bot11.com">www.bot11.com</a> for more information.</p></div></div>';
+                                            var emailpart2 = '</strong></p><p>Happy emailing, BOT11 Team</p><p>Please visit <a href = "http://www.bot11.com">www.bot11.com</a> for more information.</p></div></div>';
 
-                                            dbmail["mg"].sendRaw('mynba2k16@bot11.com',
+                                            dbmail["mg"].sendRaw('support@bot11.com',
                                                 emailTo,
-                                                'From: mynba2k16@bot11.com' +
+                                                'From: support@bot11.com' +
                                                 '\nTo: ' + emailTo +
                                                 '\nContent-Type: text/html; charset=utf-8' +
-                                                '\nSubject: Mynba2k16Bot CDKEY From BOT11.COM' +
+                                                '\nSubject: ' + gameName + ' BOT CDKEY From BOT11.COM' +
                                                 '\n\n' + emailpart1 + newCdkey + emailpart2,
                                                 function (err) {
                                                     if (err) {
@@ -255,12 +268,23 @@ function write(str) {
 //}
 
 
-
+//MyNBA2K16
 router.get('/show', function (req, res, next) {
-    var refChildTrans = dbmail["ref"].child('mynba2k16F/trans/' + req.query["tx"]);
+ //   console.log("+++++++++++++++++++=")
+ //   console.log(JSON.stringify(req.body));
+ //   console.log(req.query["item_number"]);
+    var refChildTrans = "";
+    var gameName = "";
+    if (req.query["item_number"] == "9") {
+        refChildTrans = dbmail["ref"].child('mynba2k16F/trans/' + req.query["tx"]);
+        gameName = "MyNBA2K16";
+    } else if (req.query["item_number"] == "10") {
+        refChildTrans = dbmail["ref"].child('wwe/trans/' + req.query["tx"]);
+        gameName = "WWE SuperCard";
+    }
     refChildTrans.on('value', function (dataSnapshot) {
         if (dataSnapshot.val() != null) {
-            res.render('emailTemplate', {newCdkey : dataSnapshot.val()["cdkey"]});
+            res.render('emailTemplate', {newCdkey : dataSnapshot.val()["cdkey"], gameName : gameName});
             refChildTrans.off();
         } else {
         }
