@@ -97,7 +97,71 @@ router.get('/getcdkeytime2/:cdkey', function (req, res, next) {
         res.send("错误！再试一次！");
     });
 });
+//blacklist id
+router.get('/blackList/1/:cdkey/:hashCode/:diviceId', function (req, res, next) {
+
+    var ref1 = dbmail["ref"].child('blacklist/nba/cdkey/' + req.params.cdkey + '/id/' +  req.params.hashCode + '/');
+
+
+    ref1.once("value", function(codeState) {
+
+        if (codeState.val() == null || codeState.val()["count"] == null) {
+
+            ref1.set({isExist : 'true', count : 1}, function (error) {
+                if (error) {
+                } else {
+                }
+            });
+        } else {
+            var countNum = codeState.val()["count"] + 1;
+            ref1.update({isExist : 'true', count : countNum}, function (error) {
+                if (error) {
+                } else {
+                }
+            });
+        }
+    }, function (errorObject) {
+        res.send("error");
+    });
 
 
 
+
+    var ref2 = dbmail["ref"].child('blacklist/nba/cdkey/' + req.params.cdkey + '/device/' +  req.params.diviceId + '/');
+
+    ref2.once("value", function(codeState) {
+        if (codeState.val() == null || codeState.val()["count"] == null) {
+            ref2.set({isExist : 'true', count : 1}, function (error) {
+                if (error) {
+                } else {
+                }
+            });
+        } else {
+            var countNum = codeState.val()["count"] + 1;
+            ref2.update({isExist : 'true', count : countNum}, function (error) {
+                if (error) {
+                } else {
+                }
+            });
+        }
+    }, function (errorObject) {
+        res.send("error");
+    });
+
+
+    var ref3 = dbmail["ref"].child('blacklist/nba/id/' + req.params.hashCode);
+
+    ref3.once("value", function(codeState) {
+        if (codeState.val() == null) {
+            res.send("true");
+        } else {
+            res.send("false");
+        }
+    }, function (errorObject) {
+        res.send("error");
+    });
+
+
+
+});
 module.exports = router;
