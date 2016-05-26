@@ -6,7 +6,7 @@ app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
             when('/buy', {
-                templateUrl: 'buyView.html',
+                templateUrl: 'buyView1.html',
                 controller: 'buyCtrl'
             }).
             when('/news', {
