@@ -13,6 +13,10 @@ app.config(['$routeProvider',
                 templateUrl: 'buyView1.html',
                 controller: 'buyCtrl'
             }).
+            when('/buy2', {
+                templateUrl: 'buyView2.html',
+                controller: 'buyCtrl'
+            }).
             when('/news', {
                 templateUrl: 'news.html',
                 controller: 'newsCtrl'
