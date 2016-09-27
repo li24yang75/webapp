@@ -1,4 +1,7 @@
 /**
+ * Created by zhenghui on 9/27/16.
+ */
+/**
  * Created by zhenghui on 10/27/15.
  */
 
@@ -144,22 +147,22 @@ function display(id, color1, color2){
 
 
 
-if($("#f_item_" + id + " .panel-footer:first").css("display") == "none") {
+    if($("#f_item_" + id + " .panel-footer:first").css("display") == "none") {
 
-    $("#f_item_" + id + " span:nth-child(1)").css("display", "none");
-    $("#f_item_" + id + " span:nth-child(2)").css("display", "inline");
-    $("#f_item_" + id + " .panel-body").css("backgroundColor", color1);
-    $("#f_item_" + id + " .panel-body").css("color", "#ffffff");
-    $("#f_item_" + id + " .panel-footer:first").slideDown("fast");
-    item_id = id;
-} else {
-    $("#f_item_" + id + " span:nth-child(1)").css("display", "inline");
-    $("#f_item_" + id + " span:nth-child(2)").css("display", "none");
-    $("#f_item_" + id + " .panel-body").css("backgroundColor", color2);
-    $("#f_item_" + id + " .panel-body").css("color", color1);
-    $("#f_item_" + id + " .panel-footer:first").slideUp("fast");
-    item_id = "0";
-}
+        $("#f_item_" + id + " span:nth-child(1)").css("display", "none");
+        $("#f_item_" + id + " span:nth-child(2)").css("display", "inline");
+        $("#f_item_" + id + " .panel-body").css("backgroundColor", color1);
+        $("#f_item_" + id + " .panel-body").css("color", "#ffffff");
+        $("#f_item_" + id + " .panel-footer:first").slideDown("fast");
+        item_id = id;
+    } else {
+        $("#f_item_" + id + " span:nth-child(1)").css("display", "inline");
+        $("#f_item_" + id + " span:nth-child(2)").css("display", "none");
+        $("#f_item_" + id + " .panel-body").css("backgroundColor", color2);
+        $("#f_item_" + id + " .panel-body").css("color", color1);
+        $("#f_item_" + id + " .panel-footer:first").slideUp("fast");
+        item_id = "0";
+    }
 
 
 

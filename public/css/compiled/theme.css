@@ -1383,9 +1383,23 @@ a:focus, button:focus {
       @media (max-width: 767px) {
         #home2 #hero .slides .slide.first {
           padding-top: 50px; } }
-      #home2 #hero .slides .slide.first .bg {
-        background-image: url("../../images/bg2.jpg");
+
+#home2 #hero .slides .slide.first .bg {
+  background-image: url("../../images/bg2.jpg");
+  background-position: center 18%; }
+
+      #home2 #hero .slides .slide.first .bg#id1 {
+        background-image: url("../../images/bg5.jpg");
         background-position: center 18%; }
+
+#home2 #hero .slides .slide.first .bg#id2 {
+  background-image: url("../../images/bg2.jpg");
+  background-position: center 18%; }
+
+#home2 #hero .slides .slide.first .bg#id3 {
+  background-image: url("../../images/bg5.jpg");
+  background-position: center 18%; }
+
         #home2 #hero .slides .slide.first .bg:after {
           background: rgba(52, 52, 58, 0.6); }
       #home2 #hero .slides .slide.first .info h1.hero-text {

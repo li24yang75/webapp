@@ -45,12 +45,20 @@ app.config(['$routeProvider',
                 templateUrl: 'nbaView.html',
                 controller: 'nbaCtrl'
             }).
+            when('/nba17', {
+                templateUrl: 'nba17View.html',
+                controller: 'nba17Ctrl'
+            }).
             otherwise({
                 redirectTo: '/'
             });
     }]);
 
 app.controller('nbaCtrl',function($scope, $location) {
+
+});
+
+app.controller('nba17Ctrl',function($scope, $location) {
 
 });
 
