@@ -80,21 +80,30 @@ $(function () {
         }, 1000);
     }
 
+    clearInterval(window.interval);
+    window.interval = undefined;
 
-    //interval = setInterval(function () {
-    //    console.log(xxx++);
-    //    if (swiping) {
-    //        return;
-    //    }
-    //    swiping = true;
-    //
-    //    actualIndex++;
-    //    if (actualIndex >= $slides.length) {
-    //        actualIndex = 0;
-    //    }
-    //
-    //    updateSlides(actualIndex);
-    //}, 7000);
+if (window.interval == undefined) {
+
+    //window.interval = 333;
+    //console.log("++")
+    window.interval = setInterval(function () {
+        //console.log(xxx++);
+        if (swiping) {
+            return;
+        }
+        swiping = true;
+
+        actualIndex++;
+        if (actualIndex >= $slides.length) {
+            actualIndex = 0;
+        }
+
+        updateSlides(actualIndex);
+    }, 5000);
+    //console.log(window.interval);
+}
+
 
 
     // demo player
