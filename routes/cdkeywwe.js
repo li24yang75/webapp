@@ -59,7 +59,7 @@ router.get('/update/:keyCode/:oldSessionCode/:newSessionCode', function(req, res
             var now= new Date();
             var timeSeconds = Math.ceil(now.getTime() / 1000);
             if (codeState.val()["new"] == true) {
-                var validTime = timeSeconds + 31 * 24 * 60 * 60;
+                var validTime = timeSeconds + 30 * 24 * 60 * 60;
                 ref.update({"expireTime" : validTime, "new" : false, "preUpdate" : false,"sessionCode" : req.params.newSessionCode}, function(error) {
                     if (error) {
                         res.send("Error, Please try again!");
@@ -77,7 +77,10 @@ router.get('/update/:keyCode/:oldSessionCode/:newSessionCode', function(req, res
                 });
             } else {
                 var validTime = codeState.val()["expireTime"] - 6 * 60 * 60;
-                ref.update({"sessionCode" : req.params.newSessionCode, "preUpdate" : false, "expireTime" : validTime}, function(error) {
+
+                var penalty = codeState.val()["penalty"] == null ? 1 : codeState.val()["penalty"] + 1;
+
+                ref.update({"sessionCode" : req.params.newSessionCode, "preUpdate" : false, "expireTime" : validTime, "penalty" : penalty}, function(error) {
                     if (error) {
                         res.send("Error, Please try again!");
                     } else {

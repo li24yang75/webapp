@@ -228,4 +228,28 @@ router.get('/blackList/2/:cdkey/:hashCode/:diviceId', function (req, res, next) 
 });
 
 
+
+router.get('/getversion/:game', function (req, res, next) {
+
+    var ref = dbmail["ref"].child('info/' + req.params.game);
+    ref.once("value", function(codeState) {
+        res.send(codeState.val());
+    }, function (errorObject) {
+        res.send("error");
+    });
+});
+
+
+// router.get('/checktrial/:game/:hashCode/:date', function (req, res, next) {
+//
+//     var ref = dbmail["ref"].child('info/' + req.params.game);
+//     ref.once("value", function(codeState) {
+//         res.send(codeState.val());
+//     }, function (errorObject) {
+//         res.send("error");
+//     });
+// });
+
+
+
 module.exports = router;
