@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg">
+<html class="bg" style="overflow: auto">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -75,7 +75,7 @@
             </button>
         </div>
 
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="myColl">
             <ul class="nav navbar-nav navbar-right" style="font-size: 17px">
 
 
@@ -90,42 +90,42 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" style = "background-color: black; right: auto;left: 0px;">
-                            <li><a href="#/nba17" style = "color: #3b88b6; padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/nba17_2.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>MyNBA2K17</a></li>
-                            <li><a href="#/wwe" style = "color: #3b88b6;  padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/wwe2.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>WWE SuperCard</a></li>
-                            <li><a href="#/nba" style = "color: #3b88b6; padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/nba.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>MyNBA2K16</a></li>
+                            <li onclick="document.getElementById('myColl').classList.toggle('in')"><a href="#/nba17" style = "color: #3b88b6; padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/nba17_2.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>MyNBA2K17</a></li>
+                            <li onclick="document.getElementById('myColl').classList.toggle('in')"><a href="#/wwe" style = "color: #3b88b6;  padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/wwe2.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>WWE SuperCard</a></li>
+                            <li onclick="document.getElementById('myColl').classList.toggle('in')"><a href="#/nba" style = "color: #3b88b6; padding-left : 17px;" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'; this.style.backgroundColor='#000000'" onMouseOut="this.style.color='#3b88b6'" ><img src="images/logos/nba.jpg" alt="nba" style="height: 30px; width: 40px; padding-right: 10px"/>MyNBA2K16</a></li>
 
                         </ul>
                     </div>
                 </li>
 
-                <li class="dropdown" >
+                <li class="dropdown" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="#/" style="color:#3b88b6" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Home
                     </a>
                 </li>
 
 
-                <li class="dropdown">
+                <li class="dropdown" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="http://bbs.bot11.com" style="color:#3b88b6" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Forums
                     </a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="#/tutorial" style="color:#3b88b6" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Tutorial
                     </a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="#/download" style="color:#3b88b6" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Download
                     </a>
                 </li>
-                <li class="dropdown" style="color:#3b88b6" >
+                <li class="dropdown" style="color:#3b88b6" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="#/buy" style="color:#3b88b6" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Buy
                     </a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" onclick="document.getElementById('myColl').classList.toggle('in')">
                     <a href="#/community" style="color:#3b88b6" onclick="window.scrollTo(0,0)" onMouseOver="this.style.color='#483d8b'" onMouseOut="this.style.color='#3b88b6'" >
                         Contact
                     </a>

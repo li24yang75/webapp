@@ -5,16 +5,8 @@ var app = angular.module('app',['ngRoute']);
 app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-            when('/buy1', {
-                templateUrl: 'buyView.html',
-                controller: 'buyCtrl'
-            }).
             when('/buy', {
                 templateUrl: 'buyView1.html',
-                controller: 'buyCtrl'
-            }).
-            when('/buy2', {
-                templateUrl: 'buyView2.html',
                 controller: 'buyCtrl'
             }).
             when('/news', {

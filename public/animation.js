@@ -30,8 +30,8 @@ $(function () {
             return;
         }
         swiping = true;
-
-        clearInterval(interval);
+        clearInterval(window.interval);
+        //clearInterval(interval);
         interval = null;
 
         actualIndex++;
@@ -48,8 +48,8 @@ $(function () {
             return;
         }
         swiping = true;
-
-        clearInterval(interval);
+        clearInterval(window.interval);
+        //clearInterval(interval);
         interval = null;
 
         actualIndex--;
