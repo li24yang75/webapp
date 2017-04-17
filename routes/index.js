@@ -85,7 +85,7 @@ router.get('/aa', function (req, res, next) {
 //
 //});
 
-//
+
 // router.get('/add1', function (req, res, next) {
 //    //var now= new Date();
 //    //var timeSeconds = Math.ceil(now.getTime() / 1000);
@@ -94,7 +94,7 @@ router.get('/aa', function (req, res, next) {
 //    var now = new Date();
 //    var timeSeconds = Math.ceil(now.getTime() / 1000);
 //
-//    for (var i = 0; i < 300; i++) {
+//    for (var i = 0; i < 600; i++) {
 //        var str1 = "";
 //        for (var j = 0; j < 32; j++) {
 //            var aa = Math.floor(Math.random() * 36);
