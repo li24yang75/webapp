@@ -49,10 +49,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/paypal', paypal);
+app.use('/api/cdkeyd', cdkeyd);
+app.use('/api/cdkeyf1', cdkeyf1);
+app.use('/api/cdkeywwe', cdkeywwe);
 app.use('/api', api);
-app.use('/cdkeyd', cdkeyd);
-app.use('/cdkeyf1', cdkeyf1);
-app.use('/cdkeywwe', cdkeywwe);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
